@@ -1,6 +1,7 @@
 # Thumbor setup and configuration files
 
 * Google Cloud Compute managed instances set up behind a load balancer behind CDN
+* Individual instances have multiple thumbor processes balanced with nginx
 * Make sure to `restart thumbor` on configuration changes when testing locally
 
 ## Todo
@@ -17,7 +18,7 @@ DETECTORS = [
 ```
 * Whitelist allowed domains and buckets
 * Set up security keys
-* Enable max-age headers for CDN
+* Enable and set max-age headers for CDN caching
 * Enable respect orientation EXIF `RESPECT_ORIENTATION = True` for mobile images
 
 ## Deployment
